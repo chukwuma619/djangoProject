@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Page</title>
+</head>
+<body>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        <h2>Create your account</h2>
+        {% for field in form %}
+            {{ field.label }}
+            {{ field }}
+
+            {% if field.errors %}
+                <small style="color: red">{{ field.errors|striptags }}</small>
+            {% endif %}
+        {% endfor %}
+
+    <input type="submit" value="Login">
+    </form>
+<p>Don't have an account? <a href="{% url 'register' %}">Register</a> </p>
+</body>
+</html>
