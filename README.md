@@ -15,8 +15,7 @@ Follow these steps to set up the Django project:
 
 1. **Clone** the Repository: Clone the repository to your local machine:
    ```shell
-   git clone <repository_url>
-   cd 
+   git clone https://github.com/chukwuma619/djangoProject
    ```
 2. **Create** a Virtual Environment (Optional but highly recommended):
    ```shell
